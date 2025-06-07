@@ -1,0 +1,119 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background-color: #1f2937; /* dark slate */
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2.5px solid #fff;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.sidebar .title {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #9ca3af;
+}
+
+.contact p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.contact a {
+  color: #fcd34d;
+  text-decoration: none;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+/* Section Headings */
+.content h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #111827;
+  border-bottom: 2px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* List Styling */
+.card ul {
+  list-style: disc inside;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
